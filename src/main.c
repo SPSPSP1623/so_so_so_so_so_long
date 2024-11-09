@@ -26,8 +26,6 @@ void	ft_mlx(t_core *core, t_map *map, t_mlx *mlx)
 	mlx->img = mlx_new_image(mlx->ptr, map->w * SIZE, map->h * SIZE);
 	if (!mlx->img)
 		get_error(core, "Error: problem with mlx_new_image.\n");
-	mlx->addy = mlx_get_data_addr(mlx->img, &mlx->bits_per_pixel, \
-		&mlx->size_line, &mlx->endian);
 }
 
 int	main(int argc, char *argv[])
