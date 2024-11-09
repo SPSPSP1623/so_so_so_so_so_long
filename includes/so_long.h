@@ -47,14 +47,14 @@
 # define LEFT_XPM "textures/p_left.xpm"
 # define RIGHT_XPM "textures/p_right.xpm"
 
-typedef struct  s_text
+typedef struct s_text
 {
 	int		h;
 	int		w;
 	void	*img;
 }			t_text;
 
-typedef struct  s_co
+typedef struct s_co
 {
 	int	x;
 	int	y;
@@ -116,8 +116,6 @@ typedef struct s_core
 	t_map		*map;
 	t_mlx		*mlx;
 }			t_core;
-
-
 
 /* INIT.C */
 void	init_structs(t_core *core, t_data *data, t_map *map, t_mlx *mlx);
